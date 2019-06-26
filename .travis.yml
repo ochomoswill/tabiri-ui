@@ -1,11 +1,16 @@
 language: node_js
 node_js:
   - "stable"
+# Specify `npm install`
+install:
+  - npm install
+
+# Continue to use the old cache location
 cache:
   directories:
-    - node_modules
+    - "node_modules"
 script:
-  - npm test
+#  - npm test
   - npm run build
   - mv build/index.html build/200.html
 deploy:
