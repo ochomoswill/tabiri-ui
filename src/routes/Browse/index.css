@@ -1,0 +1,30 @@
+.leaflet-container {
+    height: 100%;
+    width: 100%;
+}
+
+.parent-details-label
+{
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 5px 15px;
+    transition: .3s;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    z-index: 99;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 8px 14px;
+    font-weight: 500;
+}
+
+
+@media only screen and (min-width: 1025px) {
+    #map{
+        height:calc(100vh - 82px)
+    }
+}

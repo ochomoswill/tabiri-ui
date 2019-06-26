@@ -1,0 +1,1 @@
+mv build/index.html build/200.html
