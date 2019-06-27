@@ -224,7 +224,7 @@ $ surge token
 
 - Push a new commit to GitHub
 
-- You can see the deployment status on [TravisCI](https://travis-ci.org/)
+- Watch the builds or deployment status at [TravisCI](https://travis-ci.org/) on `travis-ci.org/<username>/<repository>/builds`.
 
 - When done your app will be deployed on `<your_name_here>.surge.sh`. You can make some more changes to your app and push them up to GitHub to see them quickly redeployed automatically to your webpage.
 
