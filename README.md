@@ -1,168 +1,241 @@
-<a href="http://fvcproductions.com"><img src="https://avatars1.githubusercontent.com/u/4284691?v=3&s=200" title="FVCproductions" alt="FVCproductions"></a>
+<a href="http://tabiri.surge.sh/home"><img height="100px" src="http://tabiri.surge.sh/static/media/colored.d9973a3c.svg" title="Tabiri" alt="Tabiri"></a>
 
-<!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
-
-***INSERT GRAPHIC HERE (include hyperlink in image)***
+<!--[![Tabiri](http://tabiri.surge.sh/static/media/colored.d9973a3c.svg)](http://tabiri.surge.sh/home)--> 
 
 # Tabiri UI
 
-> Subtitle or Short Description Goes Here
+A React Web Application that leverages GIS to display statistical forecasts of vaccine demand in Nyandarua County.
 
-> ideally one sentence
 
-> include terms/tags that can be searched
-
-**Badges will go here**
-
-- build status
-- issues (waffle.io maybe)
-- devDependencies
-- npm package
-- coverage
-- slack
-- downloads
-- gitter chat
-- license
-- etc.
-
-[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![Dependency Status](http://img.shields.io/gemnasium/badges/badgerbadgerbadger.svg?style=flat-square)](https://gemnasium.com/badges/badgerbadgerbadger) [![Coverage Status](http://img.shields.io/coveralls/badges/badgerbadgerbadger.svg?style=flat-square)](https://coveralls.io/r/badges/badgerbadgerbadger) [![Code Climate](http://img.shields.io/codeclimate/github/badges/badgerbadgerbadger.svg?style=flat-square)](https://codeclimate.com/github/badges/badgerbadgerbadger) [![Github Issues](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/issues.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger/issues) [![Pending Pull-Requests](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/pulls.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger/pulls) [![Gem Version](http://img.shields.io/gem/v/badgerbadgerbadger.svg?style=flat-square)](https://rubygems.org/gems/badgerbadgerbadger) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) [![Badges](http://img.shields.io/:badges-9/9-ff6799.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger)
-
-- For more on these wonderful ~~badgers~~ badges, refer to <a href="http://badges.github.io/badgerbadgerbadger/" target="_blank">`badgerbadgerbadger`</a>.
-
-***INSERT ANOTHER GRAPHIC HERE***
-
-[![INSERT YOUR GRAPHIC HERE](http://i.imgur.com/dt8AUb6.png)]()
-
-- Most people will glance at your `README`, *maybe* star it, and leave
-- Ergo, people should understand instantly what your project is about based on your repo
-
-> Tips
-
-- HAVE WHITE SPACE
-- MAKE IT PRETTY
-- GIFS ARE REALLY COOL
-
-> GIF Tools
-
-- Use <a href="http://recordit.co/" target="_blank">**Recordit**</a> to create quicks screencasts of your desktop and export them as `GIF`s.
-- For terminal sessions, there's <a href="https://github.com/chjj/ttystudio" target="_blank">**ttystudio**</a> which also supports exporting `GIF`s.
-
-**Recordit**
-
-![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
-
-**ttystudio**
-
-![ttystudio GIF](https://raw.githubusercontent.com/chjj/ttystudio/master/img/example.gif)
+[![Sneak Peek](https://img.youtube.com/vi/b33qhOCp51c/0.jpg)](https://www.youtube.com/watch?v=b33qhOCp51c)
 
 ---
 
-## Table of Contents (Optional)
-
-> If you're `README` has a lot of info, section headers might be nice.
+## Table of Contents
 
 - [Installation](#installation)
 - [Features](#features)
 - [Contributing](#contributing)
-- [FAQ](#faq)
+- [Deployment](#deployment)
 - [Support](#support)
 - [License](#license)
-
-
----
-
-## Example (Optional)
-
-```javascript
-// code away!
-
-let generateProject = project => {
-  let code = [];
-  for (let js = 0; js < project.length; js++) {
-    code.push(js);
-  }
-};
-```
 
 ---
 
 ## Installation
 
-- All the `code` required to get started
-- Images of what it should look like
+Below is the installation process
 
 ### Clone
 
-- Clone this repo to your local machine using `https://github.com/fvcproductions/SOMEREPO`
+Clone this repo to your local machine
+
+```shell
+$ git clone https://github.com/ochomoswill/tabiri-ui.git
+```
+
+### Folder Structure
+
+The folder structure will be as follows after cloning
+
+```
+tabiri-ui/    
+    public/
+    src/   
+    	assets/
+    	components/
+    	containers/
+    	routes/    	     
+        store/
+        	store1/
+            	actions.js                
+            	actionTypes.js  
+            	reducers.js                
+            	sagas.js
+            	selectors.js 
+            	services.js
+        utils/                
+        ...
+        index.js
+    .gitignore
+    .travis.yml
+    package.json
+    README.md
+```
 
 ### Setup
 
-- If you want more syntax highlighting, format your code like this:
-
-> update and install this package first
-
-```shell
-$ brew update
-$ brew install fvcproductions
-```
-
-> now install npm and bower packages
+Install the dependency by typing the below on the root directory
 
 ```shell
 $ npm install
-$ bower install
 ```
 
-- For all the possible languages that support syntax highlithing on GitHub (which is basically all of them), refer <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">here</a>.
+To start the application
+
+> The application runs on a live API. However if you want to set up your the API locally, head over to [tabiri-api](https://github.com/ochomoswill/tabiri_api)
+
+```shell
+$ npm start
+```
 
 ---
 
 ## Features
-## Usage (Optional)
+<!--## Usage (Optional)
 ## Documentation (Optional)
 ## Tests (Optional)
 
 - Going into more detail on code and technologies used
 - I utilized this nifty <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a> for this sample `README`.
+-->
+
+### Technology Used
+* React
+* Redux
+* Redux Saga
+* React Router v4
+* React-Leaflets
+* Chart-Js
+* Bootstrap
+
 
 ---
 
 ## Contributing
 
-> To get started...
-
 ### Step 1
 
 - **Option 1**
-    - 🍴 Fork this repo!
+    Fork this repo!
 
 - **Option 2**
-    - 👯 Clone this repo to your local machine using `https://github.com/joanaz/HireDot2.git`
+    Clone this repo to your local machine
+    
+    ```shell
+    $ git clone https://github.com/ochomoswill/tabiri-ui.git
+    ```
 
 ### Step 2
 
-- **HACK AWAY!** 🔨🔨🔨
+**HACK AWAY!** 🔨🔨🔨
 
 ### Step 3
 
-- 🔃 Create a new pull request using <a href="https://github.com/joanaz/HireDot2/compare/" target="_blank">`https://github.com/joanaz/HireDot2/compare/`</a>.
+Create a new pull request using <a href="https://github.com/ochomoswill/tabiri-ui/compare/" target="_blank">`https://github.com/ochomoswill/tabiri-ui/compare/`</a>.
 
 ---
 
-## FAQ
+## Deployment
 
-- **How do I do *specifically* so and so?**
-    - No problem! Just do this.
+- Get source code
+
+    **Option 1**
+    - Fork the repo
+        
+    - Create a clone of your forked repo
+        
+        ```shell
+        $ git clone https://github.com/ochomoswill/tabiri-ui.git
+        ```
+    
+    **Option 2**
+    - Clone this repo to your local machine
+    
+        ```shell
+        $ git clone https://github.com/ochomoswill/tabiri-ui.git
+        ```
+    
+    - Then create your own new repo and set new remote url
+    
+        ```shell
+        $ git remote set-url https://github.com/USERNAME/REPOSITORY.git
+        ```
+    
+    
+      
+
+
+- Install surge
+
+```shell
+$ npm install --g surge
+```
+
+- Build the app
+
+```shell
+$ npm run build
+```
+
+- Set up surge
+
+```shell
+$ surge
+```
+
+- Surge will kick in and ask for your email and a password to set up your account. 
+When it gets to project path:, be sure to append `/build` to the end.
+The next prompt is for `domain:`, enter `<your_name_here>.surge.sh`.
+
+- Head on over to [TravisCI](https://travis-ci.org/) and log in with your GitHub account.
+
+- Enable your projects by flicking the switch, editing the .travis.yml to your project.
+
+```text
+    language: node_js
+    node_js:
+      - "stable"
+    # Specify `npm install`
+    install:
+      - npm install
+    
+    # Continue to use the old cache location
+    cache:
+      directories:
+        - "node_modules"
+    script:
+    # oops!! Tests not done yet
+    #  - npm test
+      - CI=false npm run build
+      - mv build/index.html build/200.html
+    deploy:
+      provider: surge
+      skip_cleanup: true
+      domain: <my_name_here>.surge.sh
+      project: ./build/
+    on:
+      branch: master
+```
+
+> Make sure to change the domain line under deploy to the domain you used above when running Surge so the automation will deploy the code to the same domain each time it runs.
+
+- Get and copy the surge token
+
+```shell
+$ surge token
+```
+
+- Back on [TravisCI](https://travis-ci.org/) you can find the settings by clicking the repo in the left side panel then clicking “More options” > “Settings” from the menu on the right side.
+ Scroll down the page to Environment Variables and set up the following variable:
+ 
+`SURGE_LOGIN` - your email address used when setting up Surge.
+`SURGE_TOKEN` - the token you copied from the output of `surge token`.
+
+- Push a new commit to GitHub
+
+- You can see the deployment status on [TravisCI](https://travis-ci.org/)
+
+- When done your app will be deployed on `<your_name_here>.surge.sh`. You can make some more changes to your app and push them up to GitHub to see them quickly redeployed automatically to your webpage.
 
 ---
+
 
 ## Support
 
 Reach out to me at one of the following places!
 
-- Website at <a href="http://fvcproductions.com" target="_blank">`fvcproductions.com`</a>
-- Twitter at <a href="http://twitter.com/fvcproductions" target="_blank">`@fvcproductions`</a>
-- Insert more social links here.
+- Website at <a href="https://ochomoswill.github.io" target="_blank">`ochomoswill`</a>
 
 ---
 
@@ -171,4 +244,4 @@ Reach out to me at one of the following places!
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2015 © <a href="http://fvcproductions.com" target="_blank">FVCproductions</a>.
+- Copyright 2019 © <a href="https://ochomoswill.github.io" target="_blank">ochomoswill</a>.
