@@ -182,7 +182,7 @@ The next prompt is for `domain:`, enter `<your_name_here>.surge.sh`.
 
 - Enable your projects by flicking the switch, editing the .travis.yml to your project.
 
-```text
+```yaml
     language: node_js
     node_js:
       - "stable"
