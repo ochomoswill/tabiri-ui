@@ -219,8 +219,8 @@ $ surge token
 - Back on [TravisCI](https://travis-ci.org/) you can find the settings by clicking the repo in the left side panel then clicking “More options” > “Settings” from the menu on the right side.
  Scroll down the page to Environment Variables and set up the following variable:
  
-`SURGE_LOGIN` - your email address used when setting up Surge.
-`SURGE_TOKEN` - the token you copied from the output of `surge token`.
+    - `SURGE_LOGIN` - your email address used when setting up Surge.
+    - `SURGE_TOKEN` - the token you copied from the output of `surge token`.
 
 - Push a new commit to GitHub
 
